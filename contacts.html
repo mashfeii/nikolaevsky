@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>Контакты</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20250417221318" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20250417221318" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250417221318" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__container container">
+          <a href="home.html" class="header__logo logo">
+            <img src="img/logo.svg" alt="Logo" class="logo__img" />
+          </a>
+          <button type="button" class="header__icon icon-menu">
+            <span></span>
+          </button>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a data-goto="#about" data-goto-speed="500" data-goto-header href="#" class="menu__link">
+                  О проекте
+                </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#flats" data-goto-speed="500" data-goto-header href="#" class="menu__link">
+                  Планировки
+                </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#types" data-goto-speed="500" data-goto-header href="#" class="menu__link">
+                  Способы покупки
+                </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#promo" data-goto-speed="500" data-goto-header href="#" class="menu__link">
+                  Акции
+                </a>
+              </li>
+              <li class="menu__item active">
+                <a href="contacts.html" class="menu__link"> Контакты </a>
+              </li>
+            </ul>
+            <div class="menu__request">
+              <h2 class="menu__title title">Остались вопросы?</h2>
+              <div class="menu__text">
+                <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+              </div>
+              <form action="#" class="menu__form form">
+                <span class="form__item">
+                  <input type="text" name="form[]" placeholder="Имя" class="input" required />
+                </span>
+                <span class="form__item">
+                  <input type="tel" name="form[]" placeholder="Номер телефона" class="input" required />
+                </span>
+                <span class="form__row" data-one-select>
+                  <span class="form__item">
+                    <select name="form[]" class="form" data-scroll="210">
+                      <option value="1" selected>Завтра, Ср 16 апреля</option>
+                      <option value="2">Чт 17 апреля</option>
+                      <option value="3">Пт 18 апреля</option>
+                      <option value="4">Пт 18 апреля</option>
+                    </select>
+                  </span>
+                  <span class="form__item">
+                    <select name="form[]" class="form" data-scroll="210">
+                      <option value="1" selected>Завтра, Ср 16 апреля</option>
+                      <option value="2">Чт 17 апреля</option>
+                      <option value="3">Пт 18 апреля</option>
+                      <option value="4">Пт 18 апреля</option>
+                    </select>
+                  </span>
+                </span>
+                <div class="form__checkbox checkbox">
+                  <input id="c_3" class="checkbox__input" type="checkbox" value="1" name="form[]" required />
+                  <label for="c_3" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных
+                      данных</span></label>
+                </div>
+                <button type="submit" class="form__button button">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </nav>
+          <a data-da=".header__menu.menu,767.98,1" href="#" class="header__phone phone">
+            <svg class="phone__icon" width="24" height="24">
+              <use xlink:href="img/icons/icons.svg#phone" />
+            </svg>
+            <span class="phone__text">8 800 600 02 66</span>
+          </a>
+          <button data-popup="#request" class="header__button button">
+            Купить квартиру
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="page"></main>
+    <footer class="footer">
+      <div class="footer__upper">
+        <div class="footer__form-container container">
+          <div class="footer__form-block">
+            <h2 class="footer__title title">Остались вопросы?</h2>
+            <div class="footer__text">
+              <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            <form action="#" class="footer__form form">
+              <span class="form__item">
+                <input type="text" name="form[]" placeholder="Имя" class="input" required />
+              </span>
+              <span class="form__row">
+                <span class="form__item">
+                  <input type="email" name="form[]" placeholder="Email" class="input" required />
+                </span>
+                <span class="form__item">
+                  <input type="tel" name="form[]" placeholder="Телефон" class="input" required />
+                </span>
+              </span>
+              <div class="form__checkbox checkbox">
+                <input id="c_2" class="checkbox__input" type="checkbox" value="ok" name="form[]" required />
+                <label for="c_2" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+              </div>
+              <button type="submit" class="form__button button">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+          <div class="footer__contacts">
+            <h2 class="footer__contacts-title title">МЫ ВСЕГДА НА СВЯЗИ</h2>
+            <div class="footer__text">
+              <p>Ответим на любые интересующие вопросы в рабочее время:</p>
+            </div>
+            <div class="footer__contacts-variants">
+              <div class="footer__contacts-column">
+                <span>ПН-ПТ с 9:00 — 18:00 </span>
+                <span>СБ с 11:00 — 15:00</span>
+                <span>ВС –выходной.</span>
+              </div>
+              <div class="footer__contacts-column footer__contacts-column--links">
+                <a href="#" target="_blank" class="footer__contacts-link button">
+                  <svg class="button__icon" width="32" height="32">
+                    <use xlink:href="img/icons/icons.svg#tg" />
+                  </svg>
+                  <span class="button__text"> Написать в WhatsApp </span>
+                </a>
+                <a href="#" target="_blank" class="footer__contacts-link button">
+                  <svg class="button__icon" width="32" height="32">
+                    <use xlink:href="img/icons/icons.svg#ws" />
+                  </svg>
+                  <span class="button__text"> Написать в Telegram </span>
+                </a>
+              </div>
+            </div>
+            <span class="footer__contacts-info">
+              Застройщиком жилья является ООО Специализированный Застройщик
+              «Строительная компания Развитие курортов» <br />
+              ОГРН 1212600001404 ИНН 2627027774 <br />
+              ID дома ТИП1 — ID: 56380, ТИП2 — ID: 56381
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body container">
+        <div class="footer__body-block">
+          <div class="footer__logo-block">
+            <a href="home.html" class="footer__logo logo">
+              <img src="img/logo.svg" alt="Logo" class="logo__img" />
+            </a>
+            <span class="footer__logo-text">ЖК «Николаевский» Ессентуки ул. Благодатная, 22/24/28</span>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О проекте </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Планировки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Акции</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__variants">
+            <span class="footer__variants-title">Способы покупки </span>
+            <ul class="footer__variants-list">
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> 100% платеж </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Семейная ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> It ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Военная ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Купить по акции </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Ипотека с ПВЗ 10% </span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__callback">
+            <a href="#" class="footer__phone phone">
+              <svg class="phone__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#phone" />
+              </svg>
+              <span class="phone__text">8 800 600 02 66</span>
+            </a>
+            <button type="button" data-popup="#request" class="footer__callback-button">
+              Перезвоните мне
+            </button>
+          </div>
+        </div>
+        <span class="footer__rights">
+          ИП Леонова ИНН 262902355418, ОГРНИП 321265100061471 осуществляет свою
+          деятельность на основании эксклюзивного договора единственный отдел продаж
+          ООО «СЗ „Развити е Курортов КМВ“ №риелт /Б22 от 01.11.2024., ООО „СЗ
+          „Развитие Курортов“ № 1 /Э от 22.12.2021.
+        </span>
+      </div>
+    </footer>
+
+  </div>
+  <div id="request" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="popup__header">
+          <h2 class="popup__title title">Остались вопросы?</h2>
+          <div class="popup__text">
+            <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+          </div>
+          <button data-close type="button" class="popup__close">
+            <svg class="popup__close-icon" width="16" height="16">
+              <use xlink:href="img/icons/icons.svg#close" />
+            </svg>
+          </button>
+        </div>
+        <form action="#" class="popup__form form">
+          <span class="form__item">
+            <input type="text" name="form[]" placeholder="Имя" class="input" required />
+          </span>
+          <span class="form__item">
+            <input type="tel" name="form[]" placeholder="Номер телефона" class="input" required />
+          </span>
+          <span class="form__row" data-one-select>
+            <span class="form__item">
+              <select name="form[]" class="form" data-scroll="210">
+                <option value="1" selected>Завтра, Ср 16 апреля</option>
+                <option value="2">Чт 17 апреля</option>
+                <option value="3">Пт 18 апреля</option>
+                <option value="4">Пт 18 апреля</option>
+              </select>
+            </span>
+            <span class="form__item">
+              <select name="form[]" class="form" data-scroll="210">
+                <option value="1" selected>Завтра, Ср 16 апреля</option>
+                <option value="2">Чт 17 апреля</option>
+                <option value="3">Пт 18 апреля</option>
+                <option value="4">Пт 18 апреля</option>
+              </select>
+            </span>
+          </span>
+          <div class="form__checkbox checkbox">
+            <input id="c_3" class="checkbox__input" type="checkbox" value="1" name="form[]" required />
+            <label for="c_3" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+          </div>
+          <button type="submit" class="form__button button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250417221318" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250417221318" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20250417221318" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.min.js?_v=20250417221318"></script>
+
+</body>
+
+</html>

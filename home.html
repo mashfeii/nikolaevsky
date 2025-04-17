@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>Главная</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20250417221318" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20250417221318" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250417221318" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__container container">
+          <a href="home.html" class="header__logo logo">
+            <img src="img/logo.svg" alt="Logo" class="logo__img" />
+          </a>
+          <button type="button" class="header__icon icon-menu">
+            <span></span>
+          </button>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a data-goto="#about" data-goto-speed="500" data-goto-header href="#" class="menu__link"> О проекте </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#flats" data-goto-speed="500" data-goto-header href="#" class="menu__link"> Планировки </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#types" data-goto-speed="500" data-goto-header href="#" class="menu__link"> Способы покупки </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto="#promo" data-goto-speed="500" data-goto-header href="#" class="menu__link"> Акции </a>
+              </li>
+              <li class="menu__item">
+                <a href="contacts.html" class="menu__link"> Контакты </a>
+              </li>
+            </ul>
+            <div class="menu__request">
+              <h2 class="menu__title title">Остались вопросы?</h2>
+              <div class="menu__text">
+                <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+              </div>
+              <form action="#" class="menu__form form">
+                <span class="form__item">
+                  <input type="text" name="form[]" placeholder="Имя" class="input" required />
+                </span>
+                <span class="form__item">
+                  <input type="tel" name="form[]" placeholder="Номер телефона" class="input" required />
+                </span>
+                <span class="form__row" data-one-select>
+                  <span class="form__item">
+                    <select name="form[]" class="form" data-scroll="210">
+                      <option value="1" selected>Завтра, Ср 16 апреля</option>
+                      <option value="2">Чт 17 апреля</option>
+                      <option value="3">Пт 18 апреля</option>
+                      <option value="4">Пт 18 апреля</option>
+                    </select>
+                  </span>
+                  <span class="form__item">
+                    <select name="form[]" class="form" data-scroll="210">
+                      <option value="1" selected>Завтра, Ср 16 апреля</option>
+                      <option value="2">Чт 17 апреля</option>
+                      <option value="3">Пт 18 апреля</option>
+                      <option value="4">Пт 18 апреля</option>
+                    </select>
+                  </span>
+                </span>
+                <div class="form__checkbox checkbox">
+                  <input id="c_3" class="checkbox__input" type="checkbox" value="1" name="form[]" required />
+                  <label for="c_3" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+                </div>
+                <button type="submit" class="form__button button">Отправить</button>
+              </form>
+            </div>
+          </nav>
+          <a data-da=".header__menu.menu,767.98,1" href="#" class="header__phone phone">
+            <svg class="phone__icon" width="24" height="24">
+              <use xlink:href="img/icons/icons.svg#phone" />
+            </svg>
+            <span class="phone__text">8 800 600 02 66</span>
+          </a>
+          <button data-popup="#request" class="header__button button">
+            Купить квартиру
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="page__hero hero" data-fullscreen style="background-image: url(&quot;img/hero/bg.jpg&quot;)">
+        <div class="hero__container container">
+          <h1 class="hero__title">
+            <span class="hero__title-prefix">жилой комплекс</span>
+            <span class="hero__title-main">николаевский</span>
+            <span class="hero__title-suffix">первый современный жк в центре города — курорта ессентуки</span>
+          </h1>
+          <button data-popup="#request" class="hero__button button button--lg">
+            Купить квартиру
+          </button>
+        </div>
+        <div class="hero__line">
+          <div class="hero__line-inner">
+            <div class="hero__line-line">
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+            </div>
+            <div class="hero__line-line">
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+              <div class="hero__line-block">
+                <div class="hero__line-bold">АКЦИЯ!</div>
+                <div class="hero__line-text">от</div>
+                <div class="hero__line-bold">99 500₽</div>
+                <div class="hero__line-text">за кв.м</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__promo promo" id="promo">
+        <div class="promo__container container">
+          <div class="promo__header block-header">
+            <h2 class="promo__title title">Все акции</h2>
+            <div class="promo__navigation navigation">
+              <button type="button" class="navigation__button navigation__button--prev">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#left" />
+                </svg>
+              </button>
+              <button type="button" class="navigation__button navigation__button--next">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="promo__slider">
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/1.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">МАШИНО-МЕСТА И КЛАДОВЫЕ В РАССРОЧКУ</h3>
+              <div class="slide-promo__text">
+                <p><strong>Рассрочка на выгодных условиях!</strong></p>
+                <p>
+                  До ввода в эксплуатацию. Свяжитесь с нами и мы расскажем вам
+                  условия.
+                </p>
+              </div>
+            </div>
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/2.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">Социальный проект</h3>
+              <div class="slide-promo__text">
+                <p>
+                  <strong>Скидка 10% на каждый квадратный метр приобретаемого жилья!
+                  </strong>
+                </p>
+                <p>
+                  Для: Участников СВО и их семей; Детей сирот. Акции не суммируются!
+                </p>
+              </div>
+            </div>
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/3.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">Спасибо за службу</h3>
+              <div class="slide-promo__text">
+                <p>
+                  <strong>Скидка 5000 рублей на каждый квадратный метр приобретаемого
+                    жилья!
+                  </strong>
+                </p>
+                <p>
+                  Для: Государственных служащих; Медицинских работников; Учителей;
+                  Муниципальных служащих; Сотрудников банковской и страховой сферы.
+                </p>
+                <p><strong>Акции не суммируются!</strong></p>
+              </div>
+            </div>
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/4.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">Гибкая рассрочка</h3>
+              <div class="slide-promo__text">
+                <p><strong>Приложи свои условия! </strong></p>
+                <p>Мы рассмотрим Ваше предложение по рассрочке.</p>
+              </div>
+            </div>
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/5.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">ПОЗДРАВЛЯЕМ С ПРИБАВЛЕНИЕМ</h3>
+              <div class="slide-promo__text">
+                <p>
+                  <strong>Увеличиваем материнский капитал и сертификаты молодая семья!
+                  </strong>
+                </p>
+                <p>
+                  Предоставляем скидку 10% от размера мат. капитала и сертификата
+                  молодая семья.
+                </p>
+                <p><strong>Акции не суммируются!</strong></p>
+              </div>
+            </div>
+            <div class="promo__slide slide-promo card" style="
+          background-image: url(&quot;img/promo/6.svg&quot;), var(--bg-card);
+        ">
+              <h3 class="slide-promo__title">ПЕРВЫЙ ВЗНОС НЕ ВОПРОС</h3>
+              <div class="slide-promo__text">
+                <p>
+                  <strong>Внеси 10% и накопи за 6 месяцев необходимую сумму</strong>
+                  первоначального взноса после чего оформите подходящую Вам ипотеку.
+                </p>
+                <p><strong>Акции не суммируются!</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo__pagination pagination"></div>
+      </section>
+
+      <section class="page__about about" id="about">
+        <div class="about__container container">
+          <div class="about__content">
+            <div class="about__body">
+              <h2 class="about__title">
+                <span class="about__title-prefix">О проекте</span>
+                <span class="about__title-main">жк Николаевский</span>
+                <span class="about__title-suffix">г. Ессентуки ул. Благодатная 22/24/28</span>
+              </h2>
+              <div class="about__text">
+                <p>
+                  ЖК «Николаевский — Ессентуки» в Ессентуках — это уникальный жилой
+                  комплекс, сочетающий в себе современный комфорт и продуманную
+                  инфраструктуру.
+                </p>
+                <p>
+                  Это идеальное место для тех, кто ценит качество жизни и заботится о
+                  своей семье.
+                </p>
+              </div>
+              <div class="about__benefits">
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Срок сдачи</div>
+                  <div class="about__benefit-counter">4 кв. 2027</div>
+                </div>
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Класс</div>
+                  <div class="about__benefit-counter">комфорт</div>
+                </div>
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Вид отделки</div>
+                  <div class="about__benefit-counter">без отделки</div>
+                </div>
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Количество корпусов</div>
+                  <div class="about__benefit-counter">5</div>
+                </div>
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Этажность</div>
+                  <div class="about__benefit-counter">9</div>
+                </div>
+                <div class="about__benefit">
+                  <div class="about__benefit-label">Количество квартир</div>
+                  <div class="about__benefit-counter">820</div>
+                </div>
+              </div>
+            </div>
+            <div class="about__image">
+              <img src="img/about/image.jpg" alt="" />
+            </div>
+          </div>
+          <a href="#" target="_blank" class="about__postfix">
+            Подробная информация о ходе строительства. <br />
+            Разрешительная информация размещена на ЕИС ЖС. «Дом РФ»
+          </a>
+        </div>
+      </section>
+
+      <section class="page__benefits benefits">
+        <div class="benefits__container container">
+          <h2 class="benefits__title title">наши преимущества</h2>
+          <div class="benefits__scroll" data-sticky>
+            <div class="benefits__scroll-image">
+              <img src="img/benefits/1.jpg" alt="" />
+            </div>
+            <div class="benefits__scroll-content" data-sticky-item>
+              <h3 class="benefits__subtitle">
+                <img src="img/icons/heating.svg" alt="" aria-hidden="true" />
+                <span>индивидуальное отопление</span>
+              </h3>
+              <div class="benefits__scroll-text">
+                <p>
+                  Просторные квартиры с индивидуальным отоплением, что позволяет
+                  регулировать температуру в доме по своему усмотрению.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="benefits__double">
+            <div class="benefits__double-item">
+              <h3 class="benefits__subtitle">
+                <img src="img/icons/camera.svg" alt="" aria-hidden="true" />
+                <span>наружнее видеонаблюдение</span>
+              </h3>
+              <div class="benefits__double-image">
+                <img src="img/benefits/2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="benefits__double-item">
+              <h3 class="benefits__subtitle">
+                <img src="img/icons/eco.svg" alt="" aria-hidden="true" />
+                <span>вент. фасад монолитно-каркасный</span>
+              </h3>
+              <div class="benefits__double-image">
+                <img src="img/benefits/3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="benefits__scroll" data-sticky>
+            <div class="benefits__scroll-content" data-sticky-item>
+              <h3 class="benefits__subtitle">
+                <img src="img/icons/plant.svg" alt="" aria-hidden="true" />
+                <span>благоустроенная территория</span>
+              </h3>
+              <div class="benefits__scroll-text">
+                <p>
+                  Зеленые зоны и уютные дворы делают жизнь в «Николаевском-Ессентуки»
+                  приятной и гармоничной.
+                </p>
+                <p>
+                  Особое внимание уделено детям — на территории комплекса оборудованы
+                  уникальные детские площадки, безопасные и функциональные, где малыши
+                  могут играть и развиваться.
+                </p>
+              </div>
+            </div>
+            <div class="benefits__scroll-image">
+              <img src="img/benefits/1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="benefits__scroll" data-sticky>
+            <div class="benefits__scroll-image">
+              <img src="img/benefits/5.jpg" alt="" />
+            </div>
+            <div class="benefits__scroll-content" data-sticky-item>
+              <h3 class="benefits__subtitle">
+                <img src="img/icons/car.svg" alt="" aria-hidden="true" />
+                <span>многоуровневая парковка</span>
+              </h3>
+              <div class="benefits__scroll-text">
+                <p>
+                  Для автомобилистов предусмотрены удобные парковки и паркинг, что
+                  избавляет от проблем с поиском места для машины.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__flats flats" id="flats">
+        <div class="flats__header block-header container">
+          <h2 class="flats__title title">квартиры в продаже</h2>
+          <div class="flats__navigation navigation">
+            <button type="button" class="navigation__button navigation__button--prev">
+              <svg class="navigation__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#left" />
+              </svg>
+            </button>
+            <button type="button" class="navigation__button navigation__button--next">
+              <svg class="navigation__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="flats__pagination pagination"></div>
+        <div class="flats__container container">
+          <div class="flats__slider">
+            <div class="flats__slide slide-flats card" style="background: var(--bg-card)'">
+              <div class="slide-flats__image">
+                <img src="img/flats/1.svg" alt="" />
+              </div>
+              <div class="slide-flats__content">
+                <h3 class="slide-flats__title">1 — комнатные</h3>
+                <span class="slide-flats__size">от 37,1 до 43 м²</span>
+              </div>
+              <button type="button" data-popup="#request" class="slide-flats__link button button--fw">
+                Посмотреть квартиры
+              </button>
+            </div>
+            <div class="flats__slide slide-flats card" style="background: var(--bg-card)'">
+              <div class="slide-flats__image">
+                <img src="img/flats/2.svg" alt="" />
+              </div>
+              <div class="slide-flats__content">
+                <h3 class="slide-flats__title">2 — комнатные</h3>
+                <span class="slide-flats__size">от 56,58 до 65,7 м²</span>
+              </div>
+              <button type="button" data-popup="#request" class="slide-flats__link button button--fw">
+                Посмотреть квартиры
+              </button>
+            </div>
+            <div class="flats__slide slide-flats card" style="background: var(--bg-card)'">
+              <div class="slide-flats__image">
+                <img src="img/flats/3.svg" alt="" />
+              </div>
+              <div class="slide-flats__content">
+                <h3 class="slide-flats__title">3 — комнатные</h3>
+                <span class="slide-flats__size">68,64 м²</span>
+              </div>
+              <button type="button" data-popup="#request" class="slide-flats__link button button--fw">
+                Посмотреть квартиры
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__gallery gallery">
+        <div class="gallery__header block-header container">
+          <h2 class="gallery__title title">Галерея жилого комплекса</h2>
+          <div class="gallery__navigation navigation">
+            <button type="button" class="navigation__button navigation__button--prev">
+              <svg class="navigation__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#left" />
+              </svg>
+            </button>
+            <button type="button" class="navigation__button navigation__button--next">
+              <svg class="navigation__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="gallery__pagination pagination"></div>
+        <div class="gallery__container container">
+          <div class="gallery__slider">
+            <div class="gallery__slide">
+              <img src="img/gallery/1.jpg" alt="">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/gallery/2.jpg" alt="">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/gallery/3.jpg" alt="">
+            </div>
+            <div class="gallery__slide">
+              <img src="img/gallery/4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__preview preview">
+        <div class="preview__content">
+          <div class="preview__container container">
+            <h2 class="preview__title title">
+              ЖИЗНЬ НА КАВКАЗСКИХ МИНЕРАЛЬНЫХ ВОДАХ
+            </h2>
+            <div class="preview__text">
+              <p>
+                Кавказские Минеральные Воды — уникальный регион, где природа создала
+                неповторимую гармонию гор, лесов и целебных источников. Величественные
+                вершины Кавказа, покрытые снегами, уютные долины с изумрудной зеленью
+                и чистейший воздух наполняют душу покоем. Минеральные источники,
+                окруженные живописными парками, дарят здоровье и вдохновение. Это
+                место, где красота природы сливается с целебной силой, создавая
+                атмосферу умиротворения и гармонии.
+              </p>
+            </div>
+            <button data-popup="#request" class="preview__button button button--lg">
+              Купить квартиру
+            </button>
+          </div>
+        </div>
+        <div class="preview__body" id="types">
+          <div class="preview__cards container">
+            <h2 class="preview__title title">
+              БОЛЬШЕ 8 СПОСОБОВ КУПИТЬ НЕДВИЖИМОСТЬ
+            </h2>
+            <div class="preview__card">
+              <h3 class="preview__card-title">Купить по акции</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+            <div class="preview__card">
+              <h3 class="preview__card-title">Ипотека с ПВЗ 10%</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+            <div class="preview__card">
+              <h3 class="preview__card-title">It ипотека</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+            <div class="preview__card">
+              <h3 class="preview__card-title">Военная ипотека</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+            <div class="preview__card">
+              <h3 class="preview__card-title">100% платеж</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+            <div class="preview__card">
+              <h3 class="preview__card-title">Семейная ипотека</h3>
+              <button type="button" data-popup="#request" class="preview__card-button button">
+                <svg class="preview__card-icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#down" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__selection selection">
+        <div class="selection__container container">
+          <div class="selection__content">
+            <h2 class="selection__title">
+              Получите индивидуальную подборку квартир и презентацию ЖК
+              «Николаевский-Ессентуки» <br />
+              <strong>Оставьте заявку сейчас!</strong>
+            </h2>
+            <form action="#" class="selection__form form">
+              <span class="form__item">
+                <input type="text" name="form[]" placeholder="Имя" class="input" required />
+              </span>
+              <span class="form__item">
+                <input type="tel" name="form[]" placeholder="Номер телефона" class="input" required />
+              </span>
+              <span class="form__row" data-one-select>
+                <span class="form__item">
+                  <select name="form[]" class="form" data-scroll="210">
+                    <option value="1" selected>Завтра, Ср 16 апреля</option>
+                    <option value="2">Чт 17 апреля</option>
+                    <option value="3">Пт 18 апреля</option>
+                    <option value="4">Пт 18 апреля</option>
+                  </select>
+                </span>
+                <span class="form__item">
+                  <select name="form[]" class="form" data-scroll="210">
+                    <option value="1" selected>Завтра, Ср 16 апреля</option>
+                    <option value="2">Чт 17 апреля</option>
+                    <option value="3">Пт 18 апреля</option>
+                    <option value="4">Пт 18 апреля</option>
+                  </select>
+                </span>
+              </span>
+              <div class="form__checkbox checkbox">
+                <input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]" required />
+                <label for="c_1" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+              </div>
+              <button type="submit" class="form__button button">
+                Получить подборку
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__map map container">
+        <h2 class="map__title title">Расположение и инфраструктура</h2>
+        <div class="map__container">
+          <a href="https://yandex.com/maps/11057/essentuky/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 0px">Essentuky</a><a href="https://yandex.com/maps/geo/yessentuki/53119039/?ll=42.865633%2C44.041026&utm_medium=mapframe&utm_source=maps&z=14" style="color: #eee; font-size: 12px; position: absolute; top: 14px">Yessentuki — Yandex Maps</a><iframe data-src="https://yandex.com/map-widget/v1/?ll=42.865633%2C44.041026&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExOTAzORJH0KDQvtGB0YHQuNGPLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCDQldGB0YHQtdC90YLRg9C60LgiCg2GbytCFZktMEI%2C&z=14" allowfullscreen="true"></iframe>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__upper">
+        <div class="footer__form-container container">
+          <div class="footer__form-block">
+            <h2 class="footer__title title">Остались вопросы?</h2>
+            <div class="footer__text">
+              <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
+            </div>
+            <form action="#" class="footer__form form">
+              <span class="form__item">
+                <input type="text" name="form[]" placeholder="Имя" class="input" required />
+              </span>
+              <span class="form__row">
+                <span class="form__item">
+                  <input type="email" name="form[]" placeholder="Email" class="input" required />
+                </span>
+                <span class="form__item">
+                  <input type="tel" name="form[]" placeholder="Телефон" class="input" required />
+                </span>
+              </span>
+              <div class="form__checkbox checkbox">
+                <input id="c_2" class="checkbox__input" type="checkbox" value="ok" name="form[]" required />
+                <label for="c_2" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+              </div>
+              <button type="submit" class="form__button button">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+          <div class="footer__contacts">
+            <h2 class="footer__contacts-title title">МЫ ВСЕГДА НА СВЯЗИ</h2>
+            <div class="footer__text">
+              <p>Ответим на любые интересующие вопросы в рабочее время:</p>
+            </div>
+            <div class="footer__contacts-variants">
+              <div class="footer__contacts-column">
+                <span>ПН-ПТ с 9:00 — 18:00 </span>
+                <span>СБ с 11:00 — 15:00</span>
+                <span>ВС –выходной.</span>
+              </div>
+              <div class="footer__contacts-column footer__contacts-column--links">
+                <a href="#" target="_blank" class="footer__contacts-link button">
+                  <svg class="button__icon" width="32" height="32">
+                    <use xlink:href="img/icons/icons.svg#tg" />
+                  </svg>
+                  <span class="button__text"> Написать в WhatsApp </span>
+                </a>
+                <a href="#" target="_blank" class="footer__contacts-link button">
+                  <svg class="button__icon" width="32" height="32">
+                    <use xlink:href="img/icons/icons.svg#ws" />
+                  </svg>
+                  <span class="button__text"> Написать в Telegram </span>
+                </a>
+              </div>
+            </div>
+            <span class="footer__contacts-info">
+              Застройщиком жилья является ООО Специализированный Застройщик
+              «Строительная компания Развитие курортов» <br />
+              ОГРН 1212600001404 ИНН 2627027774 <br />
+              ID дома ТИП1 — ID: 56380, ТИП2 — ID: 56381
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__body container">
+        <div class="footer__body-block">
+          <div class="footer__logo-block">
+            <a href="home.html" class="footer__logo logo">
+              <img src="img/logo.svg" alt="Logo" class="logo__img" />
+            </a>
+            <span class="footer__logo-text">ЖК «Николаевский» Ессентуки ул. Благодатная, 22/24/28</span>
+          </div>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О проекте </a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Планировки</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Акции</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__variants">
+            <span class="footer__variants-title">Способы покупки </span>
+            <ul class="footer__variants-list">
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> 100% платеж </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Семейная ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> It ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Военная ипотека </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Купить по акции </span>
+              </li>
+              <li class="footer__variants-item">
+                <span class="footer__variants-link"> Ипотека с ПВЗ 10% </span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__callback">
+            <a href="#" class="footer__phone phone">
+              <svg class="phone__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#phone" />
+              </svg>
+              <span class="phone__text">8 800 600 02 66</span>
+            </a>
+            <button type="button" data-popup="#request" class="footer__callback-button">
+              Перезвоните мне
+            </button>
+          </div>
+        </div>
+        <span class="footer__rights">
+          ИП Леонова ИНН 262902355418, ОГРНИП 321265100061471 осуществляет свою
+          деятельность на основании эксклюзивного договора единственный отдел продаж
+          ООО «СЗ „Развити е Курортов КМВ“ №риелт /Б22 от 01.11.2024., ООО „СЗ
+          „Развитие Курортов“ № 1 /Э от 22.12.2021.
+        </span>
+      </div>
+    </footer>
+
+  </div>
+  <div id="request" aria-hidden="true" class="popup">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="popup__header">
+          <h2 class="popup__title title">Остались вопросы?</h2>
+          <div class="popup__text">
+            <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+          </div>
+          <button data-close type="button" class="popup__close">
+            <svg class="popup__close-icon" width="16" height="16">
+              <use xlink:href="img/icons/icons.svg#close" />
+            </svg>
+          </button>
+        </div>
+        <form action="#" class="popup__form form">
+          <span class="form__item">
+            <input type="text" name="form[]" placeholder="Имя" class="input" required />
+          </span>
+          <span class="form__item">
+            <input type="tel" name="form[]" placeholder="Номер телефона" class="input" required />
+          </span>
+          <span class="form__row" data-one-select>
+            <span class="form__item">
+              <select name="form[]" class="form" data-scroll="210">
+                <option value="1" selected>Завтра, Ср 16 апреля</option>
+                <option value="2">Чт 17 апреля</option>
+                <option value="3">Пт 18 апреля</option>
+                <option value="4">Пт 18 апреля</option>
+              </select>
+            </span>
+            <span class="form__item">
+              <select name="form[]" class="form" data-scroll="210">
+                <option value="1" selected>Завтра, Ср 16 апреля</option>
+                <option value="2">Чт 17 апреля</option>
+                <option value="3">Пт 18 апреля</option>
+                <option value="4">Пт 18 апреля</option>
+              </select>
+            </span>
+          </span>
+          <div class="form__checkbox checkbox">
+            <input id="c_3" class="checkbox__input" type="checkbox" value="1" name="form[]" required />
+            <label for="c_3" class="checkbox__label"><span class="checkbox__text">Я согласен (а) на обработку своих персональных данных</span></label>
+          </div>
+          <button type="submit" class="form__button button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250417221318" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250417221318" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20250417221318" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.min.js?_v=20250417221318"></script>
+
+</body>
+
+</html>

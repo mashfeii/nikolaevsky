@@ -5,10 +5,11 @@
   <title>Контакты</title>
   <meta charset="UTF-8" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20250417221318" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20250417221318" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250417221318" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20250418083246" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css?_v=20250418083246" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250418083246" />
   <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -102,7 +103,150 @@
         </div>
       </div>
     </header>
-    <main class="page"></main>
+    <main class="page page--inner">
+      <section class="page__contacts contacts">
+        <div class="contacts__container container">
+          <div class="contacts__content">
+            <h1 class="contacts__title">контакты</h1>
+            <div class="contacts__text">
+              <p>
+                Наше агентство недвижимости работает напрямую от застройщика,
+                предлагая клиентам эксклюзивные условия и выгодные цены. Мы
+                сотрудничаем только с проверенными застройщиками, гарантируя
+                безопасность и надежность сделок. Наши специалисты помогут подобрать
+                идеальный объект, будь то жилье или коммерческая недвижимость, а также
+                сопроводят сделку на всех этапах — от выбора до оформления документов.
+                Доверьтесь профессионалам и найдите свой идеальный объект с нами!
+              </p>
+            </div>
+          </div>
+          <div class="contacts__image">
+            <img src="img/contacts/image.jpg" alt="" />
+          </div>
+        </div>
+        <div class="contacts__sellers sellers">
+          <div class="sellers__header block-header container">
+            <h2 class="sellers__title title">Отдел продаж</h2>
+            <div class="sellers__navigation navigation">
+              <button type="button" class="navigation__button navigation__button--prev">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#left" />
+                </svg>
+              </button>
+              <button type="button" class="navigation__button navigation__button--next">
+                <svg class="navigation__icon" width="24" height="24">
+                  <use xlink:href="img/icons/icons.svg#right" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="sellers__pagination pagination"></div>
+          <div class="sellers__container container">
+            <div class="sellers__slider">
+              <div class="sellers__slide slide-sellers">
+                <img src="img/sellers/1.jpg" alt="" />
+              </div>
+              <div class="sellers__slide slide-sellers">
+                <img src="img/sellers/2.jpg" alt="" />
+              </div>
+              <div class="sellers__slide slide-sellers">
+                <img src="img/sellers/3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__line line-contacts container">
+          <div class="line-contacts__block">
+            <h3 class="line-contacts__title">Адрес</h3>
+            <div class="line-contacts__text">
+              <p>Ставропольский край, г. Пятигорск, ул. Пальмира Тольятти, 42А</p>
+            </div>
+          </div>
+          <div class="line-contacts__block">
+            <h3 class="line-contacts__title">Время работы</h3>
+            <div class="line-contacts__text">
+              <p>ПН-ПТ с 9:00 — 18:00</p>
+              <p>СБ с 11:00 — 15:00</p>
+              <p>ВС –выходной.</p>
+            </div>
+          </div>
+          <div class="line-contacts__block">
+            <h3 class="line-contacts__title">Телефон и почта</h3>
+            <ul class="line-contacts__list">
+              <li class="line-contacts__item">
+                <a href="#" class="line-contacts__link">+7 906 440-40-80</a>
+              </li>
+              <li class="line-contacts__item">
+                <a href="#" class="line-contacts__link">kurort-sk@yandex.ru</a>
+              </li>
+            </ul>
+          </div>
+          <div class="line-contacts__block">
+            <h3 class="line-contacts__title">Социальные сети</h3>
+            <div class="line-contacts__actions">
+              <a href="#" target="_blank" class="line-contacts__contacts-link button button--fw">
+                <svg class="button__icon" width="32" height="32">
+                  <use xlink:href="img/icons/icons.svg#tg" />
+                </svg>
+                <span class="button__text"> Написать в WhatsApp </span>
+              </a>
+              <a href="#" target="_blank" class="line-contacts__contacts-link button button--fw">
+                <svg class="button__icon" width="32" height="32">
+                  <use xlink:href="img/icons/icons.svg#ws" />
+                </svg>
+                <span class="button__text"> Написать в Telegram </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__map container">
+          <a href="https://yandex.com/maps/11057/essentuky/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 0px">Essentuky</a><a href="https://yandex.com/maps/geo/yessentuki/53119039/?ll=42.865633%2C44.041026&utm_medium=mapframe&utm_source=maps&z=14" style="color: #eee; font-size: 12px; position: absolute; top: 14px">Yessentuki — Yandex Maps</a><iframe data-src="https://yandex.com/map-widget/v1/?ll=42.865633%2C44.041026&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzExOTAzORJH0KDQvtGB0YHQuNGPLCDQodGC0LDQstGA0L7Qv9C-0LvRjNGB0LrQuNC5INC60YDQsNC5LCDQldGB0YHQtdC90YLRg9C60LgiCg2GbytCFZktMEI%2C&z=14" allowfullscreen="true"></iframe>
+        </div>
+      </section>
+
+      <section class="page__employees employees container">
+        <div class="employees__column">
+          <h2 class="employees__title title">наши сотрудники</h2>
+          <button class="employees__button button button--lg">Перезвоните мне</button>
+        </div>
+        <div class="employees__card">
+          <img src="img/employees/1.jpg" alt="" />
+          <h3 class="employees__card-title">менеджер отдела продаж</h3>
+        </div>
+        <div class="employees__card">
+          <img src="img/employees/2.jpg" alt="" />
+          <h3 class="employees__card-title">менеджер отдела продаж</h3>
+        </div>
+        <button class="employees__button-mobile button button--lg">
+          Перезвоните мне
+        </button>
+      </section>
+
+      <section class="page__arrows arrows container">
+        <h2 class="arrows__title title">
+          ИНТЕРЕСУЮТ ВОПРОСЫ О СОТРУДНИЧЕСТВЕ И КОРПОРАТИВНЫЕ ПРОДАЖИ?
+        </h2>
+        <div class="arrows__body">
+          <div class="arrows__card arrow-card">
+            <h3 class="arrow-card__title">Партнерство для брокеров</h3>
+            <button type="button" data-popup="#request" class="arrow-card__button button">
+              <svg class="arrow-card__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#down" />
+              </svg>
+            </button>
+          </div>
+          <div class="arrows__card arrow-card">
+            <h3 class="arrow-card__title">Корпоративные продажи</h3>
+            <button type="button" data-popup="#request" class="arrow-card__button button">
+              <svg class="arrow-card__icon" width="24" height="24">
+                <use xlink:href="img/icons/icons.svg#down" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
     <footer class="footer">
       <div class="footer__upper">
         <div class="footer__form-container container">
@@ -192,25 +336,25 @@
             </ul>
           </nav>
           <div class="footer__variants">
-            <span class="footer__variants-title">Способы покупки </span>
+            <span class="footer__variants-title">Способы покупки</span>
             <ul class="footer__variants-list">
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> 100% платеж </span>
+                <span class="footer__variants-link">100% платеж</span>
               </li>
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> Семейная ипотека </span>
+                <span class="footer__variants-link">Семейная ипотека</span>
               </li>
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> It ипотека </span>
+                <span class="footer__variants-link">It ипотека</span>
               </li>
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> Военная ипотека </span>
+                <span class="footer__variants-link">Военная ипотека</span>
               </li>
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> Купить по акции </span>
+                <span class="footer__variants-link">Купить по акции</span>
               </li>
               <li class="footer__variants-item">
-                <span class="footer__variants-link"> Ипотека с ПВЗ 10% </span>
+                <span class="footer__variants-link">Рассрочка</span>
               </li>
             </ul>
           </div>
@@ -284,10 +428,10 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250417221318" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250417221318" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20250417221318" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="js/app.min.js?_v=20250417221318"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250418083246" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20250418083246" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js?_v=20250418083246" integrity="sha512-mDFhdB9XVuD54kvKFiWsJZM4aCnLeV6tX4bGswCtMIqfzP4C9XHuGruVQWfWcsFtFe9p42rNQZoqIVSWbAEolg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/app.min.js?_v=20250418083246"></script>
 
 </body>
 

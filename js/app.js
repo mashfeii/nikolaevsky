@@ -5240,10 +5240,9 @@
             slidesToShow: 3,
             slidesToScroll: 1,
             dots: true,
-            appendArrows: $(".promo__navigation"),
             appendDots: $(".promo__pagination"),
-            prevArrow: $(".promo__navigation-button--prev"),
-            nextArrow: $(".promo__navigation-button--next"),
+            prevArrow: $(".promo__navigation .navigation__button--prev"),
+            nextArrow: $(".promo__navigation .navigation__button--next"),
             responsive: [ {
                 breakpoint: 1023.98,
                 settings: {
@@ -5262,10 +5261,9 @@
             speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
-            appendArrows: $(".flats__navigation"),
             appendDots: $(".flats__pagination"),
-            prevArrow: $(".navigation__button--prev"),
-            nextArrow: $(".navigation__button--next"),
+            prevArrow: $(".flats__navigation .navigation__button--prev"),
+            nextArrow: $(".flats__navigation .navigation__button--next"),
             responsive: [ {
                 breakpoint: 1023.98,
                 settings: {
@@ -5281,10 +5279,9 @@
             slidesToShow: 1,
             centerMode: true,
             centerPadding: "13.12%",
-            appendArrows: $(".gallery__navigation"),
             appendDots: $(".gallery__pagination"),
-            prevArrow: $(".navigation__button--prev"),
-            nextArrow: $(".navigation__button--next"),
+            prevArrow: $(".gallery__navigation .navigation__button--prev"),
+            nextArrow: $(".gallery__navigation .navigation__button--next"),
             responsive: [ {
                 breakpoint: 1023.98,
                 settings: {
@@ -5297,6 +5294,24 @@
                     variableWidth: true,
                     centerMode: false,
                     centerPadding: "0"
+                }
+            } ]
+        });
+        $(".sellers__slider").slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            appendDots: $(".sellers__pagination"),
+            prevArrow: $(".sellers__navigation .navigation__button--prev"),
+            nextArrow: $(".sellers__navigation .navigation__button--next"),
+            responsive: [ {
+                breakpoint: 1023.98,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    dots: true
                 }
             } ]
         });

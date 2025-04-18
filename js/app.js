@@ -6047,7 +6047,7 @@
         index_umd({
             license: "GPLv3",
             log: "collapsed",
-            waitForLoad: true
+            waitForLoad: false
         }, "#calculator");
         isWebp();
         menuInit();

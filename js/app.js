@@ -1,6 +1,23 @@
 (() => {
     var __webpack_modules__ = {
         113: function(module) {
+            /*!
+ *  @preserve
+ *  
+ *  @module      iframe-resizer/parent 5.4.5 (umd) - 2025-04-16
+ *
+ *  @license     GPL-3.0 for non-commercial use only.
+ *               For commercial use, you must purchase a license from
+ *               https://iframe-resizer.com/pricing
+ * 
+ *  @description Keep same and cross domain iFrames sized to their content 
+ *
+ *  @author      David J. Bradshaw <info@iframe-resizer.com>
+ * 
+ *  @see         {@link https://iframe-resizer.com}
+ * 
+ *  @copyright  (c) 2013 - 2025, David J. Bradshaw. All rights reserved.
+ */
             !function(e, t) {
                 true ? module.exports = t() : 0;
             }(0, (function() {
@@ -1734,7 +1751,7 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        var index_umd = __webpack_require__(113);
+        __webpack_require__(113);
         $(".promo__slider").slick({
             infinite: true,
             slidesToShow: 3,
@@ -1815,11 +1832,6 @@
                 }
             } ]
         });
-        index_umd({
-            license: "GPLv3",
-            log: "collapsed",
-            waitForLoad: false
-        }, "#calculator");
         isWebp();
         menuInit();
         fullVHfix();
